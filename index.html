@@ -10,23 +10,22 @@
 </head>
 <body>
     <div class="container">
-        <h2>Word Scramble</h2>
+        <h2>Word Scramble App</h2>
         <div class="content">
+            
             <p class="word" id="outputText"></p>
-            <!-- <div>
-                <p class="hint">jgjgjgjg</p>
-                <p class="time">iiiiii</p>
-            </div> -->
+
             <form>
                 <label for="inputText">Enter your text:</label><br>
-                <input type="text" placeholder="Enter a valid word"><br>
+                <textarea class="textArea" id="inputText" placeholder="Enter a valid word"></textarea><br><br>
                 <label for="wordsToScramble">Words to scramble:</label><br>
-                <input type="text" placeholder="Enter word(s) to Scramble">
+                <input type="text" id="wordsToScramble"   placeholder="Enter word(s) to Scramble"/><br><br>
                 <div class="buttons">
                     <button class="check-word" type="button" onclick="scrambleText()">Redact Now</button>
+
                 </div>
             </form>
-            
+        
 
             
         </div>

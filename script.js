@@ -1,6 +1,27 @@
 
+// FUNCTION TO SCRAMBLE TEXT
+
+function scrambleText() {
+    var inputText = document.getElementById("inputText").value;
+    var wordsToScramble = document.getElementById("wordsToScramble").value.trim().split(' ');
+
+    var wordsArray = inputText.split(' ');
+
+    for (var i = 0; i < wordsArray.length; i++) {
+
+        if (wordsToScramble.includes(wordsArray[i])) {
+            wordsArray[i] = scrambleWord(wordsArray[i]);
+        }
+        // wordsToScramble = wordsToScramble.toString().replace("wordsToScramble", "*****");
+
+    }
+
+    document.getElementById("outputText").innerText = wordsArray.join(' ');
+    
+    
+}
 // function to scramp worsd
-function wordToScramble(word) {
+function scrambleWord(word) {
     if (word.length <= 2) {
         return word;
     }
